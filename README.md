@@ -1,51 +1,52 @@
-Inventory Management System
-Description
+# **Inventory Management System**
+
+## **Description**
+
 A simple Inventory Management System built with Spring Boot and MySQL, providing full CRUD operations for managing products.
 
-Technologies
-Spring Boot
+## **Technologies**
 
-Spring Data JPA
+- **Spring Boot**  
+- **Spring Data JPA**  
+- **MySQL**  
+- **Swagger** for API Documentation  
 
-MySQL
+## **Features**
 
-Swagger for API Documentation
+- Full CRUD functionality for products  
+- API documentation via Swagger  
+- Error handling and validation  
 
-Features
-Full CRUD functionality for products
+## **Setup**
 
-API documentation via Swagger
+1. Clone the repository:  
 
-Error handling and validation
+   ```bash
+   git clone https://github.com/gabrielpit/inventory-management-system.git
+   ```
 
-Setup
-Clone the repository:
+2. Set up your MySQL database and update the `application.properties` file with your credentials.  
 
-bash
-git clone https://github.com/gabrielpit/inventory-management-system.git
+3. Build and run the project:  
 
-Set up your MySQL database and update the application.properties file with your credentials.
+   ```bash
+   mvn spring-boot:run
+   ```
 
-Build and run the project:
+4. Access the API:  
 
-bash
-mvn spring-boot:run
-Access the API:
+   ```bash
+   http://localhost:8080/api/products
+   ```
 
-bash
-http://localhost:8080/api/products
+## **API Endpoints**
 
-API Endpoints
+- **GET** `/api/products` - List all products  
+- **GET** `/api/products/{id}` - Get a product by ID  
+- **POST** `/api/products` - Create a new product  
+- **PUT** `/api/products/{id}` - Update a product  
+- **DELETE** `/api/products/{id}` - Delete a product  
 
-GET /api/products - List all products
+## **License**
 
-GET /api/products/{id} - Get a product by ID
-
-POST /api/products - Create a new product
-
-PUT /api/products/{id} - Update a product
-
-DELETE /api/products/{id} - Delete a product
-
-License
 MIT License
